@@ -4,4 +4,10 @@
     state="Michigan"
     zip="48864"
   ></app-address-card>
+
+  <!-- One way data binding
+  <input type="text" [value]="inputText" /> -->
+
+  <input type="text" [(ngModel)]="inputText" />
+  {{ inputText }}
 </div>

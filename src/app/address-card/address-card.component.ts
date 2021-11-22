@@ -16,6 +16,10 @@ export class AddressCardComponent implements OnInit {
   @Input("user2") user: User;
   @Input("state") state: string;
   @Input("zip") zip: number;
+  isCollapsed: boolean = true;
   constructor() {}
   ngOnInit() {}
+  toggleCollaspse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
